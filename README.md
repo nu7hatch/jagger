@@ -74,13 +74,15 @@ the frontend app directory structure:
     |-+ src/                - Dynamic sources.
     | |-- styles/           - Your CSS, SASS, LESS or God knows what styles.
     | |-- sprites/          - Source images for your sprites.
-    | |-- main/             - Your application's (Java|Coffee)Script files.
+    | |-+ main/             - Your application's (Java|Coffee)Script files.
+    | | |-- app.js
     | |-- test/             - Your GUI test files (i.a. QUnit, Selenium).
     |-- static/             - Static images, javascripts, fonts, etc.
-    |-- templates/          - All the template files.
+    |-+ templates/          - All the template files.
+    | |-- index.erb
     |-- config.ru           - Rack configuration.
 
-You can set ther up a Gemfile with `jagger` listed as a dependency and
+You can set ther up a `Gemfile` with `jagger` listed as a dependency and
 add this code to `config.ru`
 
     # *snip*
